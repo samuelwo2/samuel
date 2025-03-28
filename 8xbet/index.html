@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="8xbet - nhà cái hàng đầu, cá cược thể thao, casino trực tuyến, game bài đổi thưởng. Đăng ký ngay để nhận ưu đãi hấp dẫn!">
+    <title>8xbet | Nhà Cái Hàng Đầu</title>
+    <link rel="shortcut icon" href="pic/items.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="pic/icon.jpg" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <i style="color: black;" class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li class="icon"><a href=" https://8xbetapp.com/"target="_blank">Tải 8xbet</a></li>
+                    <li class="icon"><a href="https://t.me/LIXI8X"target="_blank">Nạp Tiền</a></li>
+                    <li class="icon"><a href="https://t.me/LIXI8X"target="_blank">Rút Tiền</a></li>
+                    <li class="icon"><a href="https://t.me/LIXI8X"target="_blank">Liên Hệ</a></li>
+                    <li class="icon"><a href="https://t.me/LIXI8X"target="_blank">Nạp Tiền Thẻ Điện Thoại</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nutbam">
+            <button class="btn-dang-ky"><a href="https://8xbe638.app" target="_blank">Đăng ký</a></button>
+        </div>
+    </header>
+
+    <div class="text">
+        <h1>8XBET TRANG CHỦ | LINK ĐĂNG KÝ</h1>
+    </div>
+
+    <div class="banner">
+        <img src="pic/banner.jpg" alt="banner">
+        <span class="text-banner">
+            <h1 class="txl">8XBET - NHÀ CÁI HÀNG ĐẦU</h1>
+            <p class="blink"><a href="https://8xbe638.app"target="_blank">Đăng Nhập Ngay</a></p>
+        </span>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menu = document.getElementById("nav-menu");
+        const toggleBtn = document.getElementById("menu-toggle");
+
+        if (toggleBtn) {
+            toggleBtn.addEventListener("click", (event) => {
+                event.stopPropagation(); // Ngăn chặn sự kiện lan ra ngoài
+                menu.classList.toggle("active");
+            });
+        }
+
+        menu.addEventListener("click", (event) => {
+            event.stopPropagation(); // Ngăn sự kiện click trong menu lan ra ngoài
+        });
+
+        function closeMenu(event) {
+            if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+                menu.classList.remove("active");
+            }
+        }
+
+        document.addEventListener("click", closeMenu);
+        document.addEventListener("touchstart", closeMenu);
+
+        // Đóng menu khi nhấn vào mục trong menu
+        document.querySelectorAll(".nav-menu a").forEach(item => {
+            item.addEventListener("click", () => {
+                menu.classList.remove("active");
+            });
+        });
+    });
+    </script>
+</body>
+
+
+  
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("nav-menu");
+    const toggleBtn = document.getElementById("menu-toggle");
+    const body = document.body;
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("touchstart", (event) => {
+            event.preventDefault(); // Ngăn chặn nhấn đúp
+            menu.classList.toggle("active");
+
+            // Ngăn cuộn trang khi menu mở
+            if (menu.classList.contains("active")) {
+                body.style.overflow = "hidden";
+            } else {
+                body.style.overflow = "auto";
+            }
+        });
+    }
+
+    // Đóng menu khi nhấn vào mục trong menu
+    document.querySelectorAll(".nav-menu a").forEach(item => {
+        item.addEventListener("touchstart", () => {
+            menu.classList.remove("active");
+            body.style.overflow = "auto"; // Bật lại cuộn trang
+        });
+    });
+
+    // Đóng menu khi nhấn ra ngoài
+    document.addEventListener("touchstart", (event) => {
+        if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+            menu.classList.remove("active");
+            body.style.overflow = "auto"; // Bật lại cuộn trang
+        }
+    });
+});
+
+
+</script>
+<footer>
+    
+</footer>
+</html>
+</html>
